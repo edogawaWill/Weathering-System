@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="recommendation.css">
+</head>
+<body class="recommendation-page">
+    <div class="app-container">
+        <h2>ACTIVITIES RECOMMENDATIONS</h2>
+        <p id="recommendation-type" class="sub-text">Sector Protocol: --</p>
+        
+        <div class="mission-section">
+            <h3 class="section-title">SYSTEM SUGGESTIONS</h3>
+            <ul id="activity-list"></ul> 
+        </div>
+
+        <div class="mission-section">
+            <h3 class="section-title">YOUR PLANNED ACTIVITIES</h3>
+            <ul id="saved-activities-list"></ul> 
+        </div>
+
+        <div class="action-buttons">
+            <button onclick="window.location.href='index.html'" class="nav-btn secondary">RETURN TO HOMEPAGE</button>
+            <button onclick="window.location.href='manageActivity.html'" class="nav-btn primary">MANAGE ACTIVITY</button>
+        </div>
+    </div>
+    <script src="activitiesRecommendation.js"></script>
+</body>
+</html>

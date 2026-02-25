@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Activity | Intel Terminal</title>
+    <link rel="stylesheet" href="manageActivity.css">
+</head>
+<body class="manage-page">
+    <div class="app-container">
+        <h2>ACTIVITY DATA ENTRY</h2>
+        <p class="sub-header">Add, Edit, or Delete Activities</p>
+
+        <div class="activity-form-container">
+            <input type="hidden" id="edit-index" value="-1">
+            
+            <div class="form-grid">
+                <input type="text" id="activity-name" placeholder="Activity Name (e.g. Crying)">
+                <input type="date" id="activity-date">
+                <select id="activity-type">
+                    <option value="Indoor">Indoor</option>
+                    <option value="Outdoor">Outdoor</option>
+                </select>
+                <button id="add-btn" onclick="addActivity()">ADD TO SCHEDULE</button>
+            </div>
+        </div>
+
+        <h3 class="section-title">SCHEDULED ACTIVITY</h3>
+        <ul id="manage-list"></ul>
+
+        <div class="footer-actions">
+            <button class="back-btn" onclick="window.location.href='index.html'">RETURN TO HOMEPAGE</button>
+        </div>
+    </div>
+
+    <script src="manageActivity.js"></script>
+</body>
+</html>

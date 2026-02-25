@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mikha Weathering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="logo">MIKHA WEATHERING</div>
+        <div class="search-sector">
+            <input type="text" id="city-input" placeholder="Enter City Name...">
+            <button onclick="buttonClicked()">Scan City</button>
+        </div>
+    </nav>
+
+    <main class="dashboard-grid">
+        <section class="main-stats glass-card">
+            <h1 id="city-name">CITY: --</h1>
+            <div class="temp-display">
+                <span id="temperature">--</span><span class="unit">°C</span>
+            </div>
+            <p id="condition" class="sub-heading">Awaiting input...</p>
+
+            <div class="weather-telemetry">
+                <div class="tel-item">
+                    <span class="label">WIND VELOCITY</span>
+                    <div class="data-row"><span id="wind-speed" class="value">--</span><span class="unit-sm">m/s</span></div>
+                </div>
+                <div class="tel-item">
+                    <span class="label">HUMIDITY</span>
+                    <div class="data-row"><span id="humidity" class="value">--</span><span class="unit-sm">%</span></div>
+                </div>
+                <div class="tel-item">
+                    <span class="label">PRESSURE</span>
+                    <div class="data-row"><span id="pressure" class="value">--</span><span class="unit-sm">hPa</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="intel-terminal glass-card">
+            <h3><span class="status-dot"></span> ASYA THE WEATHER AI</h3>
+            <div id="surveillance-report" class="terminal-text">
+                Initializing scan protocol... System ready for input.
+            </div>
+        </section>
+
+        <section class="quick-actions glass-card">
+            <button id="view-recommendations-btn" onclick="window.location.href='activitiesRecommendation.html'" class="action-btn primary" disabled>
+                VIEW ACTIVITY RECOMMENDATIONS
+            </button>
+            <button onclick="window.location.href='manageActivity.html'" class="action-btn secondary">
+                MANAGE ACTIVITY
+            </button>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
